@@ -1,0 +1,497 @@
+
+
+/* scale back up to a sane default background: #002bb8;*/
+div#globalWrapper {
+	font-size: 127%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+
+}
+/*
+** Logo properties
+*/
+
+#p-logo {
+	top: 0;
+	left: 0;
+	position: absolute; /*needed to use z-index */
+	z-index: 3;
+	height: 155px;
+	width: 12em;
+	overflow: visible;
+}
+
+/*
+
+
+
+#p-personal li {
+	z-index: 0;
+	border: none;
+	padding: 0;
+	display: inline;
+	color: #2f6fab;
+	margin-left: 1em;
+	line-height: 1.2em;
+	background: none;
+}
+
+#p-personal li a {
+	text-decoration: none;
+	color: #005896;
+	padding-bottom: .2em;
+	background: none;
+}
+
+#p-personal li a:hover {
+	background-color: white;
+	padding-bottom: .2em;
+	text-decoration: none;
+}
+
+#p-personal li.active a:hover {
+	background-color: transparent;
+}
+
+
+/*
+** the page-related actions- page/talk, edit etc
+*/
+#p-cactions {
+	/*position: absolute;
+	top: 1.3em;*/
+display:inline-block;
+	left: 11.5em;
+	margin: 0;
+	
+	width: 76%;
+	line-height: 1.1em;
+	overflow: none;
+	background: none;
+	border-collapse: collapse;
+	padding-left: 1em;
+	font-size: 95%;
+}
+
+#p-cactions ul {
+	list-style-type: none;
+	list-style-image: none;
+}
+
+#p-cactions li {
+	display:inline;
+
+	border: 1px solid #70AA4D;;
+	border-top: none;
+	padding: 0 ;
+	margin: 0;
+	overflow: hidden;
+	
+}
+#p-cactions li:hover {
+		background-color: #70AA4D;;
+	
+}
+#p-cactions li.selected {
+	border-color: #C2E4AE;;
+	font-weight: bold;
+}
+
+
+#p-cactions li.selected a {
+	z-index: 3;
+	background-color: white;
+}
+
+#p-cactions .new a {
+	color: #ba0000;
+}
+
+#p-cactions li a:hover {
+	z-index: 3;
+	text-decoration: none;
+	background-color: white;
+}
+
+#p-cactions h3 {
+	display: none;
+}
+
+#p-cactions li.istalk {
+	margin-right: 0;
+}
+
+#p-cactions li.istalk a {
+	padding-right: .5em;
+}
+
+#p-cactions #ca-addsection a {
+	padding-left: .4em;
+	padding-right: .4em;
+}
+
+/* offsets to distinguish the tab groups */
+li#ca-talk {
+	margin-right: 1.6em;
+}
+
+#p-cactions .pBody {
+	font-size: 1em;
+	background-color: transparent;
+	color: inherit;
+	border-collapse: inherit;
+	border: 0;
+	padding: 0;
+}
+
+#p-cactions li a {
+	text-transform: lowercase;
+}
+/* The icon in front of the username / login link */
+li#pt-userpage,
+li#pt-anonuserpage,
+li#pt-login {
+	/* @embed */
+	background: url(user.gif) top left no-repeat;
+	padding-left: 20px;
+}
+
+#p-personal ul {
+	text-transform: lowercase;
+}
+
+/* Don't lowercase username or IP addresses (IPv6) */
+li#pt-userpage,
+li#pt-anonuserpage {
+	text-transform: none;
+}
+
+#p-personal li.active {
+	font-weight: bold;
+}
+
+li#ca-watch,
+li#ca-unwatch,
+li#ca-varlang-0,
+li#ca-print {
+	margin-left: 1.6em;
+}
+
+
+
+/* allows .pBody styles to wrap around content added via BaseTemplateAfterPortlet hook */
+.pBody:after {
+	content: '';
+/*	clear: both;
+	display: block;*/
+}
+
+.portlet ul {
+
+	line-height: 1.5em;
+	font-size: 95%;
+	padding: 0;
+	margin: 0;
+}
+
+.portlet li {
+	padding: 0;
+	margin: 0;
+
+
+
+	border: 1px solid #70AA4D;;
+	border-top: none;
+	padding: 0;
+	margin: 0;
+	overflow: visible;
+
+}
+#p-cactions li a {display:inline-block;width:100%;
+	background-color: #70AA4D;;
+	color: #002bb8;
+	border: none;
+	padding: 0 .8em .3em;
+	position: relative;
+	z-index: 0;
+	margin: 0;
+	text-decoration: none;display:inline;
+
+}
+
+/* Override text-transform on languages where capitalization is significant */
+.capitalize-all-nouns .portlet h3,
+.capitalize-all-nouns #p-personal ul,
+.capitalize-all-nouns #p-cactions ul li a {
+	text-transform: none;
+}
+a.new,
+#p-personal a.new {
+	color: #cc2200;
+}
+
+/*
+** general portlet styles (elements in the quickbar)
+*/
+.portlet {
+	border: none;
+	margin: 0 0 .5em;
+	padding: 0;
+	float: none;
+	width: 11.6em;
+	overflow: hidden;
+}
+
+.portlet h3 {
+	/*background: transparent;*/
+	padding: 0 1em 0 .5em;
+	display: inline;
+	height: 1em;
+	text-transform: lowercase;
+	font-size: 91%;
+	font-weight: normal;
+	white-space: nowrap;
+}
+
+
+#p-logo h3 {
+	display: none;
+}
+#expreferences {
+	margin: 0;
+	border: 1px solid #aaa;
+	clear: both;
+	padding: 1.5em;
+	background-color: #F9F9F9;
+}
+#p-logo a,
+#p-logo a:hover {
+	display: block;
+	height: 155px;
+	width: 12.2em;
+	background-repeat: no-repeat;
+	background-position: 35% 50% !important;
+	text-decoration: none;
+}
+
+
+
+/*
+** footer
+body{
+color: #666666;
+
+}
+*/
+
+
+div#footer li {
+	display: inline;
+	margin: 0 1.3em;
+}
+
+#f-poweredbyico, #f-copyrightico {
+	margin: 0 8px;
+	position: relative;
+	top: -2px; /* Bump it up just a tad */
+}
+
+#f-poweredbyico {
+	float: left;
+	height: 1%;
+}
+
+#f-copyrightico {
+	float: left;
+	height: 1%;
+}
+#globalWrapper{
+/*background: url("http://localhost/core/skins/funlab/rexheadbg.jpg");
+  background-repeat: repeat-y;*/
+    /*background-attachment: fixed;
+    background-position: center top; */
+
+/*opacity: 0.6;border: 1px solid black;
+    filter: alpha(opacity=60); *//* For IE8 and earlier */
+    
+   
+}
+#column-content{
+}
+
+#mw-content-text{ 
+ background-color:transparent;
+    border: 1px solid #AAAAAA;
+    clear: both;
+    margin: 0;
+    padding: 1.5em;
+}
+
+.mw-body{
+background: url(footer.jpg) no-repeat bottom center; 
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+#body {
+
+background-color: #A0AFBF;
+    color: #666666;
+    /*font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;*/
+
+a:hover{
+
+text-shadow: 0px 0px 9px #70AA4D;
+  color: #70AA4D;
+
+}
+
+    font-size: 12px;
+width:100%;/*background: url("http://localhost/core/skins/funlab/headbg.jpg") no-repeat scroll left top #FFFFFF;*/
+
+}
+#header {
+   /* background: url("http://funlab.fr/wp-content/uploads/2013/12/funlab_short_sb.jpg") no-repeat scroll left top #FFFFFF;*/
+width:90%;
+}
+
+/*
+** the personal toolbar
+*/
+#p-personal {
+
+
+	top: 0;
+	z-index: 3;
+}
+
+#p-personal {
+	white-space: nowrap;
+	padding: 0;
+	margin: 0;
+	border: none;
+	background: none;
+	overflow: visible;
+	line-height: 1.2em;
+}
+
+#p-personal h3 {
+	display: none;
+}
+
+#p-personal .portlet,
+#p-personal .pBody {
+	z-index: 0;
+	padding: 0;
+	margin: 0;
+	border: none;
+	overflow: visible;
+	background: none;
+}
+
+/* general styles 
+a {
+	color: #002bb8;
+}
+
+a:visited {
+	color: #5a3696;
+}*/
+#body {
+
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+}
+.pBody ,.pBody a{text-shadow: 0px 0px 9px #70AA4D;
+  color: #fff;}
+#p-personal ul{
+	font-size: 95%;
+
+text-shadow: 0px 0px 9px #70AA4D;
+/* this is the ul contained in the portlet */
+
+display:block;
+	line-height: 1.4em;
+	color: #fff;
+color: #2f6fab;
+	padding: 0;
+	margin: 1px 0;;
+	list-style-type: none;
+	list-style-image: none;
+	z-index: 0;
+	cursor: default;
+
+
+}
+#p-personal li {display:inline;}
+a:link{
+
+text-shadow: 0px 0px 9px #70AA4D;
+  color: #fff;
+
+}
+a:hover{
+
+text-shadow: 0px 0px 9px #70AA4D;
+  color: #70AA4D;
+
+}
+.pBody a:hover{
+
+text-shadow: 0px 0px 9px #70AA4D;
+  color: #70AA4D;   color: #FFFFFF;
+
+}
+a:visited{
+text-shadow: 0px 0px 9px #70AA4D;
+  color: #777;}
+
+.pBody a{
+display:inline;padding:0;margin:0;
+
+    text-decoration: none;
+text-shadow: 0px 0px 9px #777;
+  color: #70AA4D;
+  
+}
+#p-navigation a{
+display:inline-block;padding:0;margin:0;
+width:100%;
+    text-decoration: none;
+text-shadow: 0px 0px 9px #777;
+  color: #70AA4D;
+  
+}
+#p-navigation a:hover{
+display:inline-block;padding:0;margin:0;
+width:100%;
+    text-decoration: none;
+text-shadow: 0px 0px 9px #70AA4D;
+  color: white;
+  
+}
+
+html{
+background-color: #A0AFBF;
+    color: #666666;}
+
+#footer{width:100%;}
+ #header{width:100%;
+  background: url(headbg.jpg); 
+ -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+/*
+#70AA4D
+*/
+
+
+    }
+

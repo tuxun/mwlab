@@ -1,0 +1,482 @@
+
+body {
+    background-color: #A0AFBF;
+    color: #666666;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+}
+#topBorder {
+    background-color: #777777;
+    height: 4px;
+}
+#wrapper {
+    box-shadow: 0 0 11px #888888;
+    margin-bottom: 40px;
+    top: 0;
+}
+#innerWrap {
+    background-color: #FFFFFF;
+}
+#featuredArea {
+    background-color: #FFFFFF;
+}
+#featuredHolder {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 595px;
+}
+#wrapper, #preHeader, #header {
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+}
+#wrapper, #footer {
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+}
+#preHeader {
+    height: 20px;
+    top: 0;
+}
+#preHeader {
+    color: #444444;
+    font-size: 11px;
+}
+#preHeaderContent {
+    height: 20px;
+}
+#preHeaderContent a, .preHeadPhone {
+    color: #444444;
+    font-size: 11px;
+}
+#preHeaderContent a:hover {
+    color: #000000;
+}
+#preHeaderContent ul li a {
+    color: #444444;
+    font-size: 10px;
+}
+#preHeaderContent ul li a:hover {
+    color: #000000;
+}
+#header {
+    height: 142px;
+}
+
+#headerSocial {
+    position: absolute;
+    right: 280px;
+    top: 101px;
+}
+.socialIcons li {
+    opacity: 0.6;
+}
+#vtip {
+    background-color: #4C4C4C;
+    color: #FFFFFF;
+}
+.vTipArrow {
+    border-color: #4C4C4C transparent transparent;
+}
+#headerSearch {
+    position: absolute;
+    right: 20px;
+    top: 55px;
+}
+#headerSearchDiv {
+    background: url("http://funlab.fr/wp-content/themes/inspired/images/skins/light-grey/searchBg.png") repeat scroll 0 0 transparent;
+}
+#headerSearchField {
+    background: url("http://funlab.fr/wp-content/themes/inspired/images/skins/light-grey/searchBgHover.png") repeat scroll 0 0 transparent;
+    color: #777777;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+}
+#headerSearchSubmit {
+    background: url("http://funlab.fr/wp-content/themes/inspired/images/skins/light-grey/searchSubmit.png") repeat scroll 0 0 transparent;
+}
+.searchTitle {
+    color: #ED5005;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 20px;
+}
+#horizontalLogo {
+    left: 35px;
+    top: 30px;
+}
+.custom-select select {
+    background: none repeat scroll 0 0 #70AA4D;
+    border: 1px solid #1A031A;
+    color: #FFFFFF;
+}
+@media not all {
+.custom-select select {
+    background: none repeat scroll 0 0 #70AA4D;
+    border: 1px solid #1A031A;
+}
+.custom-select:after {
+    background: none repeat scroll 0 0 #1A031A;
+    color: #FFFFFF;
+}
+}
+#horizontalNavigation {
+    background: none repeat scroll 0 0 #70AA4D;
+    border: 1px solid #1A031A;
+    float: right;
+    right: 20px;
+    top: 97px;
+}
+.sf-menu li {
+    border-left: 1px solid #211A21;
+}
+.sf-menu li li, .sf-menu li:first-child {
+    border-left: medium none;
+}
+#pageTitle {
+    background-color: #F9F9F9;
+    border: 1px solid #E4E4E4;
+}
+#sideBar, .contactFormBorder {
+    background-color: #F1F1F1;
+    border: 1px solid #F1F1F1;
+}
+#title h1 {
+    color: #666666;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 30px;
+}
+span.subTitle {
+    color: #999999;
+    font-family: "HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+}
+.sf-menu a, .sf-menu a:visited {
+    color: #FFFFFF;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+}
+.sf-menu ul li a, .sf-menu ul li a:visited {
+    color: #777777;
+    font-size: 12px;
+}
+.sf-menu li.sfHover a, .sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active, .sf-menu li.current_page_item a, .sf-menu li.current-menu-parent a, .sf-menu li.current_page_ancestor a {
+    color: #FFFFFF;
+}
+.sf-menu li.sfHover, .sf-menu li:hover, .sf-menu li.current_page_item, .sf-menu li.current-menu-parent, .sf-menu li.current_page_ancestor {
+    background-color: #A3D684;
+}
+.sf-menu li.sfHover li a, .sf-menu li.sfHover li li a, .sf-menu li.sfHover li li li a {
+    color: #777777;
+}
+.sf-menu li.sfHover li {
+    background-color: rgba(255, 255, 255, 0.898);
+    border-bottom: 1px solid #EEEEEE;
+}
+.sf-menu li li:hover, .sf-menu li li li:hover, .sf-menu li li.sfHover, .sf-menu li li li.sfHover, .sf-menu li li a:focus, .sf-menu li li li a:focus, .sf-menu li li a:hover, .sf-menu li li li a:hover, .sf-menu li li a:active, .sf-menu li li li a:active, .sf-menu li li.current_page_parent, .sf-menu li li.current_page_item {
+    background-color: #FFFFFF;
+    color: #555555;
+}
+.sf-menu li li.sfHover a, .sf-menu li li.current_page_item a, .sf-menu li li.current_page_ancestor a, .sf-menu li li.current_page_parent a, .sf-menu li li li.current_page_item a {
+    color: #555555;
+}
+.sf-menu ul {
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+}
+#footer {
+    background: url("http://funlab.fr/wp-content/uploads/2013/12/footer-jetBlack.jpg") no-repeat scroll center bottom #F9F9F9;
+}
+#footer .smallTitle, #footer label, #footer .responseTxt {
+    color: #ED5005 !important;
+    font-size: 14px;
+}
+#footer a.smallTitle {
+    font-size: 14px;
+}
+.columnShadow {
+    background-image: url("");
+}
+#postFooter {
+    background: none repeat scroll 0 0 #666666;
+}
+#postFooterContent #copyright p {
+    color: #E4E4E4;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 10px;
+}
+#postFooterContent a {
+    color: #E4E4E4;
+    font-size: 11px;
+}
+#postFooterContent a:hover {
+    color: #FFFFFF;
+}
+h1 {
+    color: #666666;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 24px;
+}
+h2 {
+    color: #ED5005;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 20px;
+}
+h2 a {
+    color: #ED5005;
+}
+h3 {
+    color: #666666;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+}
+h4 {
+    color: #ED5005;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+}
+h5 {
+    color: #ED5005;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+}
+h6 {
+    color: #ED5005;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+}
+p {
+    color: #666666;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+}
+a {
+    color: #ED5005;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+}
+a:hover {
+    color: #444444;
+}
+.fancyBoxLight a {
+    color: #ED5005;
+}
+.fancyBoxLight a:hover, .fancyBoxLight li:hover a, .fancyBoxLight li.current a {
+    color: #444444;
+}
+#breadcrumbs {
+    color: #444444;
+    font-size: 14px;
+}
+#breadcrumbs a {
+    color: #ED5005;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+}
+#breadcrumbs a:hover {
+    color: #444444;
+}
+#footer h3 {
+    color: #444444;
+    font-size: 16px;
+}
+#footer {
+    color: #666666;
+    font-size: 12px;
+}
+#footer p {
+    color: #666666;
+    font-size: 12px;
+}
+#footer a {
+    color: #EF773E;
+    font-size: 12px;
+}
+#footer a:hover {
+    color: #ED5005;
+}
+.post-title h1 {
+    font-size: 20px;
+}
+.post-comments {
+    background-image: url("http://funlab.fr/wp-content/themes/inspired/images/skins/light-grey/postBubbles.png");
+}
+.post-comments a {
+    color: #FFFFFF;
+}
+.post-comments a:hover {
+    color: #FFFFFF;
+}
+.post-meta, .post-tags {
+    color: #999999;
+    font-size: 11px;
+}
+.post-meta a, .post-tags a {
+    color: #EF773E;
+    font-size: 11px;
+}
+.post-meta a:hover, .post-tags a:hover {
+    color: #ED5005;
+}
+.post-tags a {
+    border: 1px solid #F1F1F1;
+}
+.imagePreloader, .nivoPreloader, .kwicksPreloader, .anythingVimeo, .flexWrapper {
+    background-color: #DDDDDD;
+    background-image: url("http://funlab.fr/wp-content/themes/inspired/images/skins/light-grey/preloader.gif");
+}
+.smallBorder, .fancy, .nivo-controlNav img {
+    background: none repeat scroll 0 0 #F9F9F9;
+    border: 1px solid #DDDDDD;
+}
+.mediumBorder {
+    background: none repeat scroll 0 0 #F9F9F9;
+    border: 1px solid #DDDDDD;
+}
+#innerWrap .fancy, .comment-gravatar img, #featuredArea .fancy {
+    background: none repeat scroll 0 0 #F9F9F9;
+    border: 1px solid #DDDDDD;
+}
+#footer .smallBorder, #footer .fancy {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #DDDDDD;
+}
+#sideBar .sideHome, #footer .sideHome {
+    background: url("http://funlab.fr/wp-content/themes/inspired/images/skins/light-grey/sideHomeIcon.png") repeat scroll 0 0 transparent;
+}
+#sideBar .sidePhone, #footer .sidePhone {
+    background: url("http://funlab.fr/wp-content/themes/inspired/images/skins/light-grey/sidePhoneIcon.png") repeat scroll 0 0 transparent;
+}
+#sideBar .sideHours, #footer .sideHours {
+    background: url("http://funlab.fr/wp-content/themes/inspired/images/skins/light-grey/sideClockIcon.png") repeat scroll 0 0 transparent;
+}
+#footer .sideHome {
+    background: url("http://funlab.fr/wp-content/themes/inspired/images/skins/light-grey/altHomeIcon.png") repeat scroll 0 0 transparent;
+}
+#footer .sidePhone {
+    background: url("http://funlab.fr/wp-content/themes/inspired/images/skins/light-grey/altPhoneIcon.png") repeat scroll 0 0 transparent;
+}
+#footer .sideHours {
+    background: url("http://funlab.fr/wp-content/themes/inspired/images/skins/light-grey/altClockIcon.png") repeat scroll 0 0 transparent;
+}
+#sideBar h3 {
+    color: #666666;
+    font-size: 15px;
+}
+#sideBar p {
+    color: #666666;
+    font-size: 12px;
+}
+#sideBar a {
+    color: #ED5005;
+    font-size: 12px;
+}
+#sideBar a:hover {
+    color: #666666;
+}
+#sideBar .smallTitle, #sideBar label, #sideBarWidgets .responseTxt {
+    color: #ED5005 !important;
+    font-size: 12px;
+}
+#sideBar a.smallTitle {
+    font-size: 12px;
+}
+.tweet_odd, .tweet_even {
+    background-image: url("http://funlab.fr/wp-content/themes/inspired/images/skins/light-grey/twitterIcon.png");
+}
+#footer .tweet_odd, #footer .tweet_even {
+    background-image: url("http://funlab.fr/wp-content/themes/inspired/images/skins/light-grey/twitterIcon2.png");
+}
+#sideBar .widget_categories li, #footer .widget_categories li, #sideBar .widget_recent_comments li, #footer .widget_recent_comments li, #sideBar .widget_pages li, #footer .widget_pages li, #sideBar .widget_archive li, #footer .widget_archive li, #sideBar .widget_recent_entries li, #footer .widget_recent_entries li, #sideBar .widget_links li, #footer .widget_links li, #sideBar .widget_nav_menu li, #footer .widget_nav_menu li, #sideBar .widget_meta li, #footer .widget_meta li, #sideBar .widget_rss li, #footer .widget_rss li {
+    background-image: url("http://funlab.fr/wp-content/themes/inspired/images/skins/light-grey/mini-arrow.png");
+}
+#sideBar .widget_categories li a, #sideBar .widget_recent_comments li a, #sideBar .widget_pages li a, #sideBar .widget_archive li a, #sideBar .widget_recent_entries li a, #sideBar .widget_links li a, #sideBar .widget_nav_menu li a, #sideBar .widget_meta li a, #sideBar .widget_rss a {
+    font-size: 12px;
+}
+#footer .widget h3 {
+    border-bottom: 1px dotted #CCCCCC;
+}
+#footer .widget_categories li a, #footer .widget_recent_comments li a, #footer .widget_pages li a, #footer .widget_archive li a, #footer .widget_recent_entries li a, #footer .widget_links li a, #footer .widget_nav_menu li a, #footer .widget_meta li a, #footer .widget_rss a {
+    font-size: 13px;
+}
+#sideBar .widget_rss h3 a {
+    font-size: 15px;
+}
+#footer .widget_rss h3 a {
+    color: #444444;
+    font-size: 16px;
+}
+#sideBar .widget_pages li ul li, #sideBar .widget_nav_menu li ul li {
+    background-image: url("http://funlab.fr/wp-content/themes/inspired/images/skins/light-grey/super-mini-arrow.png");
+}
+#footer .widget_pages li ul li, #footer .widget_nav_menu li ul li {
+    background-image: url("http://funlab.fr/wp-content/themes/inspired/images/skins/light-grey/super-mini-arrow.png");
+}
+#sideBar .widget_pages li ul li a, #sideBar .widget_nav_menu li ul li a {
+    font-size: 11px;
+}
+#sideBar .widget_pages li ul li ul li a, #sideBar .widget_nav_menu li ul li ul li a {
+    font-size: 10px;
+}
+#footer .widget_pages li ul li a, #footer .widget_nav_menu li ul li a {
+    font-size: 12px;
+}
+#footer .widget_pages li ul li ul li a, #footer .widget_nav_menu li ul li ul li a {
+    font-size: 11px;
+}
+#sideBarWidgets .recentComment, #sideBarWidgets .widget_recent_comments li, #footer .recentComment, #footer .widget_recent_comments li {
+    background-image: url("http://funlab.fr/wp-content/themes/inspired/images/skins/light-grey/sideCommentIcon.png");
+}
+#searchform div {
+    background-image: url("http://funlab.fr/wp-content/themes/inspired/images/searchBg.png");
+}
+#s {
+    background-image: url("http://funlab.fr/wp-content/themes/inspired/images/searchBgHover.png");
+    color: #AAAAAA;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+}
+#searchsubmit {
+    background-image: url("http://funlab.fr/wp-content/themes/inspired/images/submitBg.png");
+}
+.tagcloud a {
+    background-color: #FCFCFC;
+    border: 1px solid #F1F1F1;
+}
+.tagcloud a:hover {
+    background-color: #FFFFFF;
+}
+.horizontalRule, #sideBar .widget, .toggleWrapper, .comment-wrapper {
+    border-bottom: 1px dotted #877F87;
+}
+.toggleText.up {
+    background-image: url("http://funlab.fr/wp-content/themes/inspired/images/toggleUp.png");
+}
+.toggleText.down {
+    background-image: url("http://funlab.fr/wp-content/themes/options/images/toggleDown.png");
+}
+.code {
+    background: url("http://funlab.fr/wp-content/themes/inspired/images/codeBg.png") repeat scroll 0 0 transparent;
+}
+.blockQuote, .testimonialQuote {
+    background-image: url("http://funlab.fr/wp-content/themes/inspired/images/skins/light-grey/quotationMarks.png");
+}
+.pullQuote {
+    border-left: 4px solid #E4E4E4;
+}
+.blockQuote, .pullQuote {
+    color: #ED5005;
+    font-family: Georgia,"Times New Roman",Times,serif;
+    font-size: 20px;
+}
+.portfolioTitle, .portfolioTitle a {
+    font-size: 16px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Droid Sans";
+}
+#title h1, .special, .searchTitle {
+    font-family: "Dancing Script",cursive;
+}
+.dropcapSmall, .dropcapMedium, .dropcapLarge {
+    font-family: "Droid Serif";
+}
+

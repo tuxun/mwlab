@@ -15,17 +15,18 @@
 
 /*** ESSENTIAL STYLES ***/
 .ssf-green, .ssf-green * {
-	margin:			0;
+	margin:0 auto;;
 	padding:		0;
 	list-style:		none;
 }
 .ssf-green {
-	line-height:	1.0;
+	line-height:	1.0;display:block;margin:0 auto;text-align:center;
 }
 .ssf-green ul {
-	position:		absolute;
+	position:		absolute;width:90%;
 	top:			-999em;
-	width:			12em; /* left offset of submenus need to match (see below) */
+display:block;
+	/*			12em;  left offset of submenus need to match (see below) */
 }
 .ssf-green ul li {
 	width:			100%;
@@ -34,7 +35,7 @@
 	visibility:		inherit; /* fixes IE7 'sticky bug' */
 }
 .ssf-green li {
-	float:			left;
+	float:			none;display:inline-block;
 	position:		relative;
 }
 .ssf-green a {
@@ -183,20 +184,16 @@ div#footer {  ;
 
 	border-top: 1px solid #fabd23;
 	border-bottom: 1px solid #fabd23;
-	margin: .6em 0 1em 0;
+	margin: 0 auto 1% auto;
 	overflow: hidden;
 	padding: .4em 0 .3em 0;
-	text-align: center;
-	font-size: 90%;
-/*width:90%;*/
-}
-
-
-/*** DEMO SKIfloat:		width:			100%; 	left;N ***/
-.ssf-green {
-	margin:auto 0;
 	
+	font-size: 80%;
+/*width:90%;text-align: center;*/
 }
+
+
+
 .ssf-green a {
 	border:			0;
 	padding: 		.75em 1em;
@@ -217,6 +214,7 @@ div#footer {  ;
 	color:			#42642E;			/* text color 2 */
 }
 .ssf-green li {
+margin:auto;
 	height:			30px;
 	background:		#70AA4D;			/* color 1 */
 }
@@ -232,14 +230,17 @@ div#footer {  ;
 }
 
 .ssf-green-wrap {
+width:100%; position: relative; margin-left: auto;
+  margin-right: auto;
+/*top:0;	position:		absolute;
 
-top:0;
-	margin: 		auto auto;
-	padding:		0;
+display:inline-block;position:top center;
+*/	margin: 		0 auto;
+
 	font-size: 		12px;
 	font-weight: 	bold;
 	height:			30px;
-	/*background:		#70AA4D;	*/		/* color 1 */
-	position:		relative;
-	z-index:		1;
+	/*z-index:		1;background:		#70AA4D;	*/		/* color 1 */
+
+	
 }

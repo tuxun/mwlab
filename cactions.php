@@ -1,7 +1,11 @@
-	<?php	?>
-		<div id="ex-p-cactions" class="ex-portlet" role="navigation">
-			<h3><?php $this->msg( 'views' ) ?></h3>
+	<?php
+//		<div id="ex-p-cactions" class="ex-portlet"
+	?>
+<div id="column-content">
+<div class="ssf-green-wrap" role="navigation">
 
+	<?php /*		<h3><?php $this->msg( 'views' ) ?></h3>
+*/?>
 			<div class="e-pBody">
  
 <?php
@@ -50,9 +54,22 @@ else if ($key=='watch')
 }
 else if ($key=='purge')
 	{
-			$editcactions[] = '' . $this->makeListItem( $key, $tab );
+			$editcactions[] = '' . $this->makeListItem( $key, $tab );}
+else if ($key=='viewsource')
+	{
+		$viewscactions[]= '' . $this->makeListItem( $key, $tab );
 }
-else { echo "Cactions keys inconnu L323 funtemplate.php: $key";	
+else if ($key=='nstab-mediawiki')
+	{
+		$viewscactions[]= '' . $this->makeListItem( $key, $tab );
+}
+else if ($key=='nstab-blog')
+	{
+		$viewscactions[]= '' . $this->makeListItem( $key, $tab );
+}
+
+else { echo "$key:<br />";
+$viewscactions[]= '' . $this->makeListItem( $key, $tab );	
 
 //echo 'inconnu:' . $this->makeListItem( $key, $tab );
 //echo 'inconnu:'.$key );
@@ -62,7 +79,7 @@ else { echo "Cactions keys inconnu L323 funtemplate.php: $key";
 }
 
 ?>
-<div class="ssf-green-wrap">
+
    
  <ul class="ssf-green">
 <li>
@@ -91,4 +108,4 @@ echo $tab.'<li>'.$i++.'</li>';
 </li>
 </ul>
 
-</div>
+

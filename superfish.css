@@ -287,8 +287,8 @@ color: #666666;
 
 
 div#footer li {
-	display: inline;
-	margin: 0 1.3em;
+	display: block;
+	margin: 0.2em;padding:2px;
 }
 
 #f-poweredbyico, #f-copyrightico {
@@ -298,7 +298,7 @@ div#footer li {
 }
 
 #f-poweredbyico {
-	float: left;
+	float: none;
 	height: 1%;
 }
 
@@ -317,65 +317,71 @@ div#footer li {
     
    
 }
-#column-content{
+#column-content{float:right;z-index:30;
 }
 
 #mw-content-text{ 
  background-color:transparent;
     border: 1px solid #AAAAAA;
-    clear: both;
+    clear: none;
     margin: 0;
     padding: 1.5em;
 }
 
-.mw-body{
-background: url(footer.jpg) no-repeat bottom center; 
+.mw-body{ border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;  border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
 
+
+background: url(footer.jpg) no-repeat bottom right; 
+/*
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+z-index:5;background-color: #11251A;*/
+width:90%;
+margin:auto;
 
 }
-
-#body {
-
-background-color: #A0AFBF;
-    color: #666666;
-    /*font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;*/
-
 a:hover{
 
 text-shadow: 0px 0px 9px #70AA4D;
   color: #70AA4D;
 
 }
+#body {
+
+background-color: #A0AFBF;
+
+    color: #666666;
+    /*font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;*/
+
+
 
     font-size: 12px;
 width:100%;/*background: url("http://localhost/core/skins/funlab/headbg.jpg") no-repeat scroll left top #FFFFFF;*/
 
 }
-#header {
+#header {z-index:6;
+background-color: #11251A;
    /* background: url("http://funlab.fr/wp-content/uploads/2013/12/funlab_short_sb.jpg") no-repeat scroll left top #FFFFFF;*/
 width:90%;
 }
 
-/*
+/*background-color: #A0AFBF;
 ** the personal toolbar
 */
-#p-personal {
 
+
+#p-personal {
 
 	top: 0;
 	z-index: 3;
-}
-
-#p-personal {
 	white-space: nowrap;
 	padding: 0;
 	margin: 0;
 	border: none;
-	background: none;
 	overflow: visible;
 	line-height: 1.2em;
 }
@@ -384,15 +390,23 @@ width:90%;
 	display: none;
 }
 
-#p-personal .portlet,
-#p-personal .pBody {
-	z-index: 0;
+#p-personal .portlet
+{
+	z-index: 50;
 	padding: 0;
 	margin: 0;
 	border: none;
 	overflow: visible;
-	background: none;
-}
+/*background-color: #A0AFBF;
+*/}
+#p-personal .pBody {
+	z-index: 50;
+	padding: 0;
+	margin: 0;
+	border: none;
+	overflow: visible;
+/*background-color: #A0AFBF;
+*/}
 
 /* general styles 
 a {
@@ -404,8 +418,7 @@ a:visited {
 }*/
 #body {
 
-    border-top-left-radius: 13px;
-    border-top-right-radius: 13px;
+
 }
 .pBody ,.pBody a{text-shadow: 0px 0px 9px #70AA4D;
   color: #fff;}
@@ -420,7 +433,7 @@ display:block;
 	color: #fff;
 color: #2f6fab;
 	padding: 0;
-	margin: 1px 0;;
+	margin: 0 0.2em;;
 	list-style-type: none;
 	list-style-image: none;
 	z-index: 0;
@@ -480,18 +493,22 @@ html{
 background-color: #A0AFBF;
     color: #666666;}
 
-#footer{width:100%;}
+#footer{width:99%;margin: 0 auto;   }
  #header{width:100%;
+margin:0;
+padding:0;
   background: url(headbg.jpg); 
  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
+text-align:center;background-color: #A0AFBF;
+  border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
 /*
 #70AA4D
 */
 
 
     }
-
+#h2 {display:inline;}

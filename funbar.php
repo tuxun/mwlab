@@ -1,5 +1,47 @@
 <div id="header">
-            <!-- WP Menubar 5.1: start menu MenuDeroulant, template Superfish, CSS ssf-green.css -->
+        
+
+<div id="headerSocial">
+                <ul class="socialIcons">
+                    <li>
+                        <a href="http://plus.google.com/+FunlabFr/" target="_blank" rel="nofollow">
+                            <img class="vtip" title="Le Funlab sur Google+" src="http://funlab.fr/wp-content/themes/inspired/images/skins/light-grey/socialGplus.png" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.facebook.com/FablabTourangeau" target="_blank" rel="nofollow">
+                            <img class="vtip" title="Le Funlab sur Facebook" src="http://funlab.fr/wp-content/themes/inspired/images/skins/light-grey/socialFacebook.png" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://twitter.com/LeFunLAB" target="_blank" rel="nofollow">
+                            <img class="vtip" title="Le Funlab sur Twitter" src="http://funlab.fr/wp-content/themes/inspired/images/skins/light-grey/socialTwitter.png" alt="" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+<div id="horizontalLogo">
+            </div>
+            
+            <div id="headerSearch">
+                <div id="searchWrap">
+                    <div class="headerSearchBox">
+                        <div>
+                            <div id="headerSearchDiv" style="padding-right:0px;">
+                                <form role="search" method="get" action="http://funlab.fr">
+                                    <input name="s" id="headerSearchField" title="Search Site" value="" onclick="this.value = '';" style="opacity: 0; ">
+                                        <input id="headerSearchSubmit" type="submit" value="">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+<!--end headerlab-->
+</div>
+
+    <!-- WP Menubar 5.1: start menu MenuDeroulant, template Superfish, CSS ssf-green.css -->
 
 <script type="text/javascript">
     // <![CDATA[
@@ -18,8 +60,10 @@ $("ul.ssf-green").superfish ({
 </script>
  
  
+
 <div class="ssf-green-wrap">
-    <ul class="ssf-green">
+
+<ul class="ssf-green">
         <li>
             <a href="http://funlab.fr/" title="Bienvenue sur le site du FunLAB">ACCUEIL</a>
         </li>
@@ -143,47 +187,9 @@ $("ul.ssf-green").superfish ({
             </ul>
         </li>
     </ul>
+   
 </div>
 
 <!-- <div class="ssf-green-after"></div>  WP Menubar 5.1: end menu MenuDeroulant, template Superfish, CSS ssf-green.css -->
-
-<div id="headerSocial">
-                <ul class="socialIcons">
-                    <li>
-                        <a href="http://plus.google.com/+FunlabFr/" target="_blank" rel="nofollow">
-                            <img class="vtip" title="Le Funlab sur Google+" src="http://funlab.fr/wp-content/themes/inspired/images/skins/light-grey/socialGplus.png" alt="" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://www.facebook.com/FablabTourangeau" target="_blank" rel="nofollow">
-                            <img class="vtip" title="Le Funlab sur Facebook" src="http://funlab.fr/wp-content/themes/inspired/images/skins/light-grey/socialFacebook.png" alt="" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://twitter.com/LeFunLAB" target="_blank" rel="nofollow">
-                            <img class="vtip" title="Le Funlab sur Twitter" src="http://funlab.fr/wp-content/themes/inspired/images/skins/light-grey/socialTwitter.png" alt="" />
-                        </a>
-                    </li>
-                </ul>
-            </div>
-<div id="horizontalLogo">
-            </div>
-            
-            <div id="headerSearch">
-                <div id="searchWrap">
-                    <div class="headerSearchBox">
-                        <div>
-                            <div id="headerSearchDiv" style="padding-right:0px;">
-                                <form role="search" method="get" action="http://funlab.fr">
-                                    <input name="s" id="headerSearchField" title="Search Site" value="" onclick="this.value = '';" style="opacity: 0; ">
-                                        <input id="headerSearchSubmit" type="submit" value="">
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                  
-<!--end headerlab-->
-                </div>
+    <hr style="margin:auto;margin:0px;width:100%;" />
 

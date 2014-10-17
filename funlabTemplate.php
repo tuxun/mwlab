@@ -27,6 +27,9 @@
 /**
  * @ingroup Skins
  */
+
+include "fcts.php";
+
 class funlabTemplate extends BaseTemplate {
 
 	/**
@@ -37,6 +40,7 @@ class funlabTemplate extends BaseTemplate {
 	 *
 	 * @access private
 	 */
+
 	function execute() {
 		// Suppress warnings to prevent notices about missing indexes in $this->data
 		wfSuppressWarnings();
@@ -44,15 +48,38 @@ class funlabTemplate extends BaseTemplate {
 		//$this->html( 'headelement' );
 		$this->headBox();
 
-		?><div id="globalWrapper"><?php $this->banner();?>
-		<div id="column-content">
-			<?php 
+		?><div id="globalWrapper"><?php  funlabTemplateAPI::banner($this->msg,$this->html,$this->data);?>
+
+<div id="content" class="mw-body" role="main">
+		<?php	include "funbar.php";?>
+
+
+			
+<?php $this->cactions(); ?>			<?php 
 $this->renderPortals( $this->data['sidebar'] );					
 ?>
-			</div></div><div id="content" class="mw-body" role="main">
-<?php	include "funbar.php";?>
+
+
+			
+
+
+				<?php
+				if ( $this->data['sitenotice'] ) {
+					?>
+					<div id="siteNotice"><?php
+					$this->html( 'sitenotice' )
+					?></div><?php
+				}
+				?>
+		</div>		
+
+
+<!-- start p-perso -->
+		
+
 <div class="portlet" id="p-personal" role="navigation">
-				<h3><?php $this->msg( 'personaltools' ) ?></h3>
+	
+			<h3><?php $this->msg( 'personaltools' ) ?></h3>
 
 				<div class="pBody">
 					<ul<?php $this->html( 'userlangattributes' ) ?>>
@@ -64,84 +91,22 @@ $this->renderPortals( $this->data['sidebar'] );
 
 		?>
 					</ul>
-
-</div>				<a id="top"></a>
-			</div>
-				<hr style="display:block;	margin:0;margin-top:3px;width:100%;"/>
-
-			<?php $this->cactions(); ?>
-				<?php
-				if ( $this->data['sitenotice'] ) {
-					?>
-					<div id="siteNotice"><?php
-					$this->html( 'sitenotice' )
-					?></div><?php
-				}
-				?>
+<a id="top"></a>
+			</div>	
+<!-- end p-perso -->
 
 
-				<h1 id="firstHeading" class="firstHeading" lang="<?php
+<h1 id="firstHeading" class="firstHeading" lang="<?php
 				$this->data['pageLanguage'] =
 					$this->getSkin()->getTitle()->getPageViewLanguage()->getHtmlCode();
 				$this->text( 'pageLanguage' );
 				?>"><span dir="auto"><?php $this->html( 'title' ) ?></span></h1>
-
-				<div id="bodyContent" class="mw-body-content">
-					<div id="siteSub"><?php $this->msg( 'tagline' ) ?></div>
-					<div id="contentSub"<?php
-					$this->html( 'userlangattributes' ) ?>><?php $this->html( 'subtitle' )
-						?></div>
-					<?php if ( $this->data['undelete'] ) { ?>
-						<div id="contentSub2"><?php $this->html( 'undelete' ) ?></div>
-					<?php
-}
-					?><?php
-					if ( $this->data['newtalk'] ) {
-						?>
-						<div class="usermessage"><?php $this->html( 'newtalk' ) ?></div>
-					<?php
-					}
-					?>
-					<div id="jump-to-nav" class="mw-jump"><?php
-						$this->msg( 'jumpto' )
-						?> <a href="#column-one"><?php
-							$this->msg( 'jumptonavigation' )
-							?></a><?php
-						$this->msg( 'comma-separator' )
-						?><a href="#searchInput"><?php
-							$this->msg( 'jumptosearch' )
-							?></a></div>
-
-					<!-- start content -->
-					<?php $this->html( 'bodytext' ) ?>
-					<?php
-					if ( $this->data['catlinks'] ) {
-						$this->html( 'catlinks' );
-					}
-					?>
-					<!-- end content -->
-					<?php
-					if ( $this->data['dataAfterContent'] ) {
-						$this->html( 'dataAfterContent'
-						);
-					}
-					$this->foot();
-					?>
-					<div class="visualClear"></div>
-				</div>
-			</div>
-		</div>
-
-			<?php
-
-
-?>
-		</div><!-- end of the left (by default at least) column		<div class="visualClear"></div> -->
-		
+			</div>	
+				<!-- end of the left (by default at least) column		<div class="visualClear"></div> -->
 
 
 		<?php
-
+ funlabTemplateAPI::pmwcontent($this->msg,$this->html,$this->data);
 		$this->printTrail();
 		echo Html::closeElement( 'body' );
 		echo Html::closeElement( 'html' );
@@ -150,62 +115,8 @@ $this->renderPortals( $this->data['sidebar'] );
 	} // end of execute() method
 
 	/*************************************************************************************************/
-function banner(){ ?><div id="column-one"<?php $this->html( 'userlangattributes' ) ?>>
-			<h2><?php $this->msg( 'navigation-heading' ) ?></h2>
+	
 
-			
-			<div class="portlet" id="p-logo" role="banner">
-				<?php
-				echo Html::element( 'a', array(
-						'href' => $this->data['nav_urls']['mainpage']['href'],
-						'class' => 'mw-wiki-logo',
-						)
-						+ Linker::tooltipAndAccesskeyAttribs( 'p-logo' )
-				); ?>
-
-			</div>		</div>	<?php }		
-function foot(){
-		$validFooterIcons = $this->getFooterIcons( "icononly" );
-		$validFooterLinks = $this->getFooterLinks( "flat" ); // Additional footer links
-
-		if ( count( $validFooterIcons ) + count( $validFooterLinks ) > 0 ) {
-			?>
-			<div id="footer" role="contentinfo"<?php $this->html( 'userlangattributes' ) ?>>
-			<?php
-			$footerEnd = '</div>';
-		} else {
-			$footerEnd = '';
-		}
-
-		foreach ( $validFooterIcons as $blockName => $footerIcons ) {
-			?>
-			<div id="f-<?php echo htmlspecialchars( $blockName ); ?>ico">
-				<?php foreach ( $footerIcons as $icon ) { ?>
-					<?php echo $this->getSkin()->makeFooterIcon( $icon ); ?>
-
-				<?php
-}
-				?>
-			</div>
-		<?php
-		}
-
-		if ( count( $validFooterLinks ) > 0 ) {
-			?>
-			<ul id="f-list">
-				<?php
-				foreach ( $validFooterLinks as $aLink ) {
-					?>
-					<li id="<?php echo $aLink ?>"><?php $this->html( $aLink ) ?></li>
-				<?php
-				}
-				?>
-			</ul>
-		<?php
-		}
-
-		echo $footerEnd;
-		}
 	/**
 	 * @param array $sidebar
 	 */

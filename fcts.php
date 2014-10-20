@@ -13,6 +13,7 @@ $this->html=$html;
 $this->data=$data;
 ?>
 <div id="bodyContent" class="mw-body-content">
+
 					<div id="siteSub"><?php $this->msg( 'tagline' ) ?></div>
 					<div id="contentSub"<?php
 					$this->html( 'userlangattributes' ) ?>><?php $this->html( 'subtitle' )
@@ -38,6 +39,32 @@ $this->data=$data;
 							$this->msg( 'jumptosearch' )
 							?></a></div>
 
+<!-- start p-personaltools -->
+<div class="portlet" id="p-personal" role="navigation">
+	
+			<h3><?php $this->msg( 'personaltools' ) ?></h3>
+
+				<div class="pBody">
+					<ul<?php $this->html( 'userlangattributes' ) ?>>
+						<?php foreach ( $this->getPersonalTools() as $key => $item ) { ?>
+							<?php echo $this->makeListItem( $key, $item ); 
+
+						
+}
+
+		?>
+					</ul>
+<a id="top"></a>
+			</div>	
+<!-- end p-personaltools -->
+
+			</div>	
+<h1 id="firstHeading" class="firstHeading" lang="<?php
+				$this->data['pageLanguage'] =
+					$this->getSkin()->getTitle()->getPageViewLanguage()->getHtmlCode();
+				$this->text( 'pageLanguage' );
+				?>"><span dir="auto"><?php $this->html( 'title' ) ?></span></h1>
+<div id="toolbar"></div>
 					<!-- start content -->
 					<?php $this->html( 'bodytext' ) ?>
 					<?php
@@ -56,7 +83,7 @@ $this->data=$data;
 
 				</div>
 	<?php	funlabTemplateAPI::foot($msg,$html,$data);?>
-					<div class="visualClear"></div></div>
+					</div>
 
 			
 		</div>
@@ -122,16 +149,7 @@ $this->data=$data;
 			<h2><?php $this->msg( 'navigation-heading' ) ?></h2>
 
 			
-			<div class="portlet" id="p-logo" role="banner">
-				<?php
-				echo Html::element( 'a', array(
-						'href' => $this->data['nav_urls']['mainpage']['href'],
-						'class' => 'mw-wiki-logo',
-						)
-						+ Linker::tooltipAndAccesskeyAttribs( 'p-logo' )
-				); ?>
-
-			</div>		</div>	<?php }	
+					<?php }	
 
 
 }

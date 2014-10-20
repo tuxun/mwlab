@@ -544,7 +544,11 @@ text-shadow: 0px 2px 11px #ED7205;
 #editform, #toolbar, #wpTextbox1 {
     clear: none;
 }
+#toc, .toc {
 
+    float: right;
+
+}
 .create-title {
     color: white;
     font-size: 14px;

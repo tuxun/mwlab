@@ -317,23 +317,14 @@ div#footer li {
     
    
 }
-#column-content{float:right;z-index:30;
-}
 
-#mw-content-text{ 
- background-color:transparent;
-    border: 1px solid #AAAAAA;
-    clear: none;
-    margin: 0;
-    padding: 1.5em;
-}
 
 .mw-body{ border-bottom-left-radius: 13px;
     border-bottom-right-radius: 13px;  border-top-left-radius: 13px;
     border-top-right-radius: 13px;
 
 
-background: url(footer.jpg) no-repeat bottom right; 
+background: url(footer.jpg) no-repeat bottom center; 
 /*
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -341,7 +332,7 @@ background: url(footer.jpg) no-repeat bottom right;
   background-size: cover;
 z-index:5;background-color: #11251A;*/
 width:90%;
-margin:auto;
+margin:auto;background-color: black;
 
 }
 a:hover{
@@ -363,7 +354,7 @@ background-color: #A0AFBF;
 width:100%;/*background: url("http://localhost/core/skins/funlab/headbg.jpg") no-repeat scroll left top #FFFFFF;*/
 
 }
-#header {z-index:6;
+#header {
 background-color: #11251A;
    /* background: url("http://funlab.fr/wp-content/uploads/2013/12/funlab_short_sb.jpg") no-repeat scroll left top #FFFFFF;*/
 width:90%;
@@ -511,4 +502,56 @@ text-align:center;background-color: #A0AFBF;
 
 
     }
-#h2 {display:inline;}
+#h2 {display:inline;
+}
+
+
+#column-one{float:right;z-index:0;width:20%;
+}
+
+#mw-content-text{ 
+
+    border: 1px solid #AAAAAA;
+    clear: none;
+    margin: 0;
+    padding: 1.5em;
+}
+.mw-body-content{ 
+
+width:80%;
+marjjjjgin:0 20% 0 1%;
+
+}
+.wikiEditor-ui {
+    background-color: #E0EEF7;
+    clear: none;
+    position: relative;
+
+}
+a,h1,h2,h3,h4,h5,h6{border: none;
+color: #ED7205;overflow:visible;white-space: nowrap;
+
+}
+a:hover{text-decoration:underline;}
+
+a:hover{
+color: white;
+text-shadow: 0px 0px 9px #ED7205;
+text-shadow: 0px 1px 10px #ED7205;
+text-shadow: 0px 2px 11px #ED7205;
+}
+.wikiEditor-ui-clear{display:none;}
+#editform, #toolbar, #wpTextbox1 {
+    clear: none;
+}
+
+.create-title {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 0 5px;
+}
+.copyright-warning {
+    color: white;
+    font-size: 11px;
+}

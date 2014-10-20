@@ -44,25 +44,36 @@ class funlabTemplate extends BaseTemplate {
 	function execute() {
 		// Suppress warnings to prevent notices about missing indexes in $this->data
 		wfSuppressWarnings();
-
-		//$this->html( 'headelement' );
 		$this->headBox();
+		?><!-- funlabtemplatestart  --><?php
+//$this->html( 'headelement' );
 
-		?><div id="globalWrapper"><?php  funlabTemplateAPI::banner($this->msg,$this->html,$this->data);?>
-
-<div id="content" class="mw-body" role="main">
-		<?php	include "funbar.php";?>
-
-
-			
-<?php $this->cactions(); ?>			<?php 
-$this->renderPortals( $this->data['sidebar'] );					
 ?>
 
+<div id="wrapper">
+    
+    <div id="contentWrapper">
+        <div id="backgroundImagexe"></div>
+        <div id="backgroundPatternbis"></div>
+        
 
-			
+		<div id="globalWrapper">
 
 
+
+
+<div id="content" class="mw-body" role="main">
+		<!-- funbar start  --><?php	include "funbar.php";?>
+<!-- funbar end  -->
+<?php  funlabTemplateAPI::banner($this->msg,$this->html,$this->data);?>
+<?php $this->cactions(); ?>
+
+
+
+<!-- [data]sidebar start  --><?php
+$this->renderPortals( $this->data['sidebar'] );					
+		?><!-- [data]sidebar end  -->
+</div>	</div>	
 				<?php
 				if ( $this->data['sitenotice'] ) {
 					?>
@@ -71,42 +82,16 @@ $this->renderPortals( $this->data['sidebar'] );
 					?></div><?php
 				}
 				?>
-		</div>		
 
 
-<!-- start p-perso -->
-		
-
-<div class="portlet" id="p-personal" role="navigation">
-	
-			<h3><?php $this->msg( 'personaltools' ) ?></h3>
-
-				<div class="pBody">
-					<ul<?php $this->html( 'userlangattributes' ) ?>>
-						<?php foreach ( $this->getPersonalTools() as $key => $item ) { ?>
-							<?php echo $this->makeListItem( $key, $item ); 
-
-						
-}
-
-		?>
-					</ul>
-<a id="top"></a>
-			</div>	
-<!-- end p-perso -->
 
 
-<h1 id="firstHeading" class="firstHeading" lang="<?php
-				$this->data['pageLanguage'] =
-					$this->getSkin()->getTitle()->getPageViewLanguage()->getHtmlCode();
-				$this->text( 'pageLanguage' );
-				?>"><span dir="auto"><?php $this->html( 'title' ) ?></span></h1>
-			</div>	
 				<!-- end of the left (by default at least) column		<div class="visualClear"></div> -->
 
 
 		<?php
  funlabTemplateAPI::pmwcontent($this->msg,$this->html,$this->data);
+		?><!-- funlabtemplateend  --><?php
 		$this->printTrail();
 		echo Html::closeElement( 'body' );
 		echo Html::closeElement( 'html' );
@@ -138,7 +123,7 @@ $this->renderPortals( $this->data['sidebar'] );
 			}
 
 			if ( $boxName == 'SEARCH' ) {
-				$this->searchBox();
+				//$this->searchBox();
 			} elseif ( $boxName == 'TOOLBOX' ) {
 				$this->toolbox();
 			} elseif ( $boxName == 'LANGUAGES' ) {
@@ -152,7 +137,7 @@ $this->renderPortals( $this->data['sidebar'] );
 	function searchBox() {
 		?>
 		<div id="p-search" class="portlet" role="search">
-			<h3><label for="searchInput"><?php $this->msg( 'search' ) ?></label></h3>
+			<!--<h3><label for="searchInput"><?php $this->msg( 'search' ) ?></label></h3>-->
 
 			<div id="searchBody" class="pBody">
 				<form action="<?php $this->text( 'wgScript' ) ?>" id="searchform">
@@ -192,17 +177,18 @@ $this->renderPortals( $this->data['sidebar'] );
 	 * Shared between MonoBook and Modern
 	 */
 	function cactions() {
+?>
+<!--start column--><?php
 include "cactions.php";
 ?>
 
-</ul>
-
-</li>
-</ul>				
+				
 				<?php $this->renderAfterPortlet( 'cactions' ); ?>
 			</div>
 		</div>
-	<?php
+
+<!--end column--><?php
+
 	}
 
 	/*************************************************************************************************/
@@ -260,10 +246,40 @@ include "cactions.php";
 	 * @param array|string $cont
 	 */
 function headBox() {
-include "header.php";
+$this->html( 'headelement' );
+		?><!-- wikiheadstart  --><?php
+?>
+<link rel='stylesheet' id='ssf-css'  href='http://localhost/core/skins/funlab/ssf-green.css' type='text/css' media='screen' />
 
-include "headerfun.php";include "headerwiki.php";		
-include "head.php";
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<link rel="shortcut icon" href="http://funlab.fr/?attachment_id=935" />
+		<link rel="pingback" href="http://funlab.fr/xmlrpc.php" />
+	<script type="text/javascript">
+var siteUrl = "http://coop.funlab/core/skins/funlab/";
+var imageUrl = "http://coop.funlab/core/skins/funlab/";
+var defaultBtnColor = "orange";
+var socialInactiveAlpha = ".6";
+var socialActiveAlpha = "1";
+</script>
+
+<script type='text/javascript' src='/core/skins/funlab/jquery.js?ver=1.11.1'></script>
+<script type='text/javascript' src='/core/skins/funlab/jquery-migrate.min.js?ver=1.2.1'></script>
+<link rel='stylesheet' id='mw2'  href='http://localhost/core/skins/funlab/main.css' type='text/css' media='screen' />
+<link rel='stylesheet' id='mw1'  href='http://localhost/core/skins/funlab/superfish.css' type='text/css' media='screen' />
+
+
+        
+<?php
+
+//include "header.php";
+
+//include "headerfun.php";
+
+
+
+		?><!-- wikiheadend  --><?php
+//include "headerwiki.php";		
+//include "head.php";
 
 }
 	function customBox( $bar, $cont ) {

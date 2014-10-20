@@ -1,28 +1,44 @@
 <div id="header">
-        
+        <div class="portlet" id="p-logo" role="banner">
+				<?php
+/*
+				echo Html::element( 'a', array(
+						'href' => $this->data['nav_urls']['mainpage']['href'],
+						'class' => 'mw-wiki-logo',
+						)
+						+ Linker::tooltipAndAccesskeyAttribs( 'p-logo' )
+				); */
+?>
+<a title="Page principale" class="mw-wikjji-logo" href="/core/index.php/Accueil">
+<img src="/core/skins/funlab/logo.png" /></a>
+			</div>	
 
 <div id="headerSocial">
                 <ul class="socialIcons">
                     <li>
                         <a href="http://plus.google.com/+FunlabFr/" target="_blank" rel="nofollow">
-                            <img class="vtip" title="Le Funlab sur Google+" src="http://funlab.fr/wp-content/themes/inspired/images/skins/light-grey/socialGplus.png" alt="" />
+                            <img class="vtip" title="Le Funlab sur Google+" src="/core/skins/funlab/socialGplus.png" alt="" />
                         </a>
                     </li>
                     <li>
                         <a href="http://www.facebook.com/FablabTourangeau" target="_blank" rel="nofollow">
-                            <img class="vtip" title="Le Funlab sur Facebook" src="http://funlab.fr/wp-content/themes/inspired/images/skins/light-grey/socialFacebook.png" alt="" />
+                            <img class="vtip" title="Le Funlab sur Facebook" src="/core/skins/funlab/socialFacebook.png" alt="" />
                         </a>
                     </li>
                     <li>
                         <a href="http://twitter.com/LeFunLAB" target="_blank" rel="nofollow">
-                            <img class="vtip" title="Le Funlab sur Twitter" src="http://funlab.fr/wp-content/themes/inspired/images/skins/light-grey/socialTwitter.png" alt="" />
+                            <img class="vtip" title="Le Funlab sur Twitter" src="/core/skins/funlab/socialTwitter.png" alt="" />
                         </a>
                     </li>
                 </ul>
-            </div>
+            </div>	
+
+
 <div id="horizontalLogo">
+
+<?php $this->searchBox();?>
             </div>
-            
+<!--
             <div id="headerSearch">
                 <div id="searchWrap">
                     <div class="headerSearchBox">
@@ -37,7 +53,7 @@
                             </div>
                         </div>
                     </div>
-                  
+                  -->
 <!--end headerlab-->
 </div>
 

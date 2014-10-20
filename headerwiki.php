@@ -6,7 +6,7 @@
 
 <style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
 /* cache key: wikiblog-wk_:resourceloader:filter:minify-css:7:7d2969e847143f8e07d37fe179f8df54 */</style>
-<!--<script src="http://localhost/core/load.php?debug=false&amp;lang=fr&amp;modules=startup&amp;only=scripts&amp;skin=funlab&amp;*"></script>-->
+<script src="http://localhost/core/load.php?debug=false&amp;lang=fr&amp;modules=startup&amp;only=scripts&amp;skin=funlab&amp;*"></script>
 
 <script  type="text/javascript" >if(window.mw){
 mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Accueil","wgTitle":"Accueil","wgCurRevisionId":1,"wgRevisionId":1,"wgArticleId":1,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"fr","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t."," \t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"],"wgMonthNamesShort":["","janv","fév","mars","avr","mai","juin","juil","août","sept","oct","nov","déc"],"wgRelevantPageName":"Accueil","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgIsMainPage":true});
@@ -17,6 +17,6 @@ mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"ccme
 /* cache key: wikiblog-wk_:resourceloader:filter:minify-js:7:69ae5d38b6de4ce4f9c1f1dad54c2303 */
 }
 if(window.mw){
-mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+mw.loader.load(["mediawiki.action.edit","ext.smw.style","ext.smw.tooltips","mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
 }</script>
  <!--  <link rel='stylesheet' id='xzxz_css-css'  href='http://localhost/core/skins/funlab/superfish.css' type='text/css' media='all' />-->

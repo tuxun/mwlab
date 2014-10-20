@@ -7,7 +7,7 @@
                           xml:lang="fr-FR">
 <head>
  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<title>FunLAB &raquo; Résultats de recherche  &raquo;  fil rouge</title>
+	<title>funwiki ;)</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 		<link rel="shortcut icon" href="http://funlab.fr/?attachment_id=935" />
